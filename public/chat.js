@@ -1,5 +1,5 @@
-// Make connection
-var socket = io.connect('http://localhost:4000');
+// konekce
+var socket = io.connect('https://l1fsec-chatter.herokuapp.com');
 
 // Query DOM
 var message = document.getElementById('message'),
@@ -8,7 +8,7 @@ var message = document.getElementById('message'),
       output = document.getElementById('output'),
       feedback = document.getElementById('feedback');
 
-// Emit events
+// emit
 btn.addEventListener('click', function(){
     socket.emit('chat', {
         message: message.value,
@@ -21,7 +21,7 @@ message.addEventListener('keypress', function(){
     socket.emit('typing', handle.value);
 })
 
-// Listen for events
+// Nasloucha jestli se neco nedeje
 socket.on('chat', function(data){
     feedback.innerHTML = '';
     output.innerHTML += '<p><strong>' + data.handle + ': </strong>' + data.message + '</p>';
