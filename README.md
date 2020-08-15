@@ -1,2 +1,2 @@
-# l1fsec-chatter
- Chatovací aplikace založená na WebSocket a Node.js 
+# websockets-playlist
+All the course files for the WebSockets playlist on The Net Ninja YouTube channel.
