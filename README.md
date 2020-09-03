@@ -1,3 +1,2 @@
-# l1fsec chatapp
-
-> Aplikace založená na websocket.io
+# Chatter
+lets a go
